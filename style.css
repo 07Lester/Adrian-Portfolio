@@ -445,16 +445,6 @@ section {
   margin-right: 8px;
 }
 
-.contact-info a {
-  color: #d1d5db;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.contact-info a:hover {
-  color: #60a5fa;
-}
-
 #contact a {
   display: inline-block;
   margin-top: 15px;

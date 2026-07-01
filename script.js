@@ -1,61 +1,54 @@
 // Mobile nav toggle
 const navToggle = document.getElementById('navToggle');
-const navList = document.getElementById('navList');
+const navList   = document.getElementById('navList');
 
-if (navToggle && navList) {
-  navToggle.addEventListener('click', () => {
-    navList.classList.toggle('show');
-  });
+navToggle?.addEventListener('click', () => navList.classList.toggle('show'));
+navList?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navList.classList.remove('show')));
 
-  // Close menu after clicking a link (mobile)
-  navList.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navList.classList.remove('show');
-    });
-  });
-}
-
-// Scroll-reveal animation for sections
-const revealTargets = document.querySelectorAll(
-  '.stat-card, .service-card, .project, .skills-grid span, .timeline, .about-text, .contact-info'
-);
-
-revealTargets.forEach(el => el.classList.add('reveal'));
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('active');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.15 });
-
-revealTargets.forEach(el => observer.observe(el));
-
-// Highlight active nav link based on scroll position
+// Active nav link on scroll
 const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.navbar ul a');
+const navLinks  = document.querySelectorAll('.nav-links a');
 
 window.addEventListener('scroll', () => {
   let current = '';
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 130;
-    if (window.scrollY >= sectionTop) {
-      current = section.getAttribute('id');
-    }
+  sections.forEach(sec => {
+    if (window.scrollY >= sec.offsetTop - 100) current = sec.id;
   });
-
-  navLinks.forEach(link => {
-    link.classList.remove('active-link');
-    if (link.getAttribute('href') === `#${current}`) {
-      link.classList.add('active-link');
-    }
+  navLinks.forEach(a => {
+    a.classList.remove('active-link');
+    if (a.getAttribute('href') === `#${current}`) a.classList.add('active-link');
   });
 });
 
-// Dynamic footer year
-const yearEl = document.getElementById('year');
-if (yearEl) {
-  yearEl.textContent = new Date().getFullYear();
+// Scroll-reveal
+const revealEls = document.querySelectorAll(
+  '.service-card, .port-card, .about-feature, .glance-item, .exp-card, .skill-bar-item, .competency-list span, .contact-item'
+);
+revealEls.forEach(el => el.classList.add('reveal'));
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('active'), i * 60);
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+revealEls.forEach(el => io.observe(el));
+
+// Footer year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Contact form stub
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('button[type="submit"]');
+  btn.textContent = 'Message sent!';
+  btn.style.background = '#22c55e';
+  setTimeout(() => {
+    btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>';
+    btn.style.background = '';
+    e.target.reset();
+  }, 3000);
 }
