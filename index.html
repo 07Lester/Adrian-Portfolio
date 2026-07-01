@@ -3,241 +3,443 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Adrian Palisoc | Insurance Processing Specialist</title>
-
+<title>Adrian Palisoc | Insurance Operations Specialist</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
-<header>
-
-<nav class="navbar">
-
-<div class="logo">
-<span>Adrian</span> Palisoc
-</div>
-
-<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-<i class="fa-solid fa-bars"></i>
-</button>
-
-<ul id="navList">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-</nav>
-
+<!-- NAVBAR -->
+<header id="navbar">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <div class="nav-initials">AP</div>
+      <div class="nav-name-block">
+        <span class="nav-fullname">Adrian Palisoc</span>
+        <span class="nav-title-small">Insurance Operations Specialist</span>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav-links" id="navList">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.pdf" target="_blank" class="nav-resume-btn"><i class="fa-solid fa-download"></i> Resume</a></li>
+    </ul>
+  </div>
 </header>
 
-<section class="hero" id="home">
+<!-- HOME -->
+<section id="home" class="hero-section">
+  <div class="hero-content">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Insurance Operations Specialist</p>
+      <h1 class="hero-headline">
+        I streamline insurance operations and deliver
+        <span class="hero-accent">compliance with accuracy.</span>
+      </h1>
+      <p class="hero-sub">
+        3+ years of experience in certificate processing, compliance review, and workflow management.
+        I help teams work smarter, meet deadlines, and exceed client expectations.
+      </p>
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn-ghost"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-wrap">
+        <img src="images/profile.jpg" alt="Adrian Palisoc">
+      </div>
+      <div class="hero-dashboard">
+        <div class="dash-card">
+          <span class="dash-num">1,250</span>
+          <span class="dash-label">Certificates</span>
+        </div>
+        <div class="dash-card">
+          <span class="dash-num">95%</span>
+          <span class="dash-label">Compliance</span>
+        </div>
+        <div class="dash-card">
+          <span class="dash-num">3+</span>
+          <span class="dash-label">Years</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="hero-left">
-
-<p class="hello">Hi, I'm</p>
-
-<h1>
-<span>Adrian</span>
-Palisoc
-</h1>
-
-<h2>
-Insurance Processing Specialist
-</h2>
-
-<p class="description">
-Insurance professional with 3+ years of experience supporting U.S. insurance agencies through Certificate of Insurance (COI) processing, policy servicing, endorsements, documentation, and administrative support.
-</p>
-
-<div class="buttons">
-
-<a href="resume.pdf" class="primary" target="_blank" rel="noopener">
-<i class="fa-solid fa-download"></i>
-Download Resume
-</a>
-
-<a href="#contact" class="secondary">
-<i class="fa-solid fa-paper-plane"></i>
-Contact Me
-</a>
-
-</div>
-
-</div>
-
-<div class="hero-right">
-<img src="images/profile.jpg" alt="Adrian Palisoc">
-</div>
-
+  <div class="glance-strip">
+    <div class="glance-item">
+      <i class="fa-solid fa-briefcase"></i>
+      <div><strong>3+</strong><span>Years Experience</span></div>
+    </div>
+    <div class="glance-item">
+      <i class="fa-solid fa-file-shield"></i>
+      <div><strong>10,000+</strong><span>Certificates Processed</span></div>
+    </div>
+    <div class="glance-item">
+      <i class="fa-solid fa-arrows-rotate"></i>
+      <div><strong>Process</strong><span>Improvement</span></div>
+    </div>
+    <div class="glance-item">
+      <i class="fa-solid fa-users"></i>
+      <div><strong>Team</strong><span>Lead Experience</span></div>
+    </div>
+  </div>
 </section>
 
-<section id="about" class="about">
-
-<div class="section-title">
-<p>ABOUT ME</p>
-<h2>Who I Am</h2>
-</div>
-
-<div class="about-grid">
-
-<div class="about-text">
-
-<p>
-Insurance Processing Specialist with over <strong>3 years</strong> of experience supporting
-U.S. insurance agencies. I specialize in Certificate of Insurance (COI) processing,
-policy review, endorsements, insurance documentation, and administrative support.
-</p>
-
-<p>
-I consistently maintain <strong>high accuracy and compliance standards</strong> while delivering
-quality, and excellent service for brokers, carriers, and clients.
-</p>
-
-</div>
-
-<div class="stats">
-
-<div class="stat-card">
-<h3>3+</h3>
-<p>Years Experience</p>
-</div>
-
-<div class="stat-card">
-<h3>High-Volume</h3>
-<p>COI Processing</p>
-</div>
-
-<div class="stat-card">
-<h3>COI</h3>
-<p>Specialist</p>
-</div>
-
-<div class="stat-card">
-<h3>Epic & CSR24</h3>
-<p>Systems Used</p>
-</div>
-
-</div>
-
-</div>
-
+<!-- ABOUT -->
+<section id="about" class="about-section">
+  <div class="about-inner">
+    <div class="about-left">
+      <p class="eyebrow">About Me</p>
+      <h2>Detail-oriented.<br>Process-driven.<br>Focused on results.</h2>
+      <div class="about-divider"></div>
+      <p class="about-body">
+        I'm an insurance operations professional with extensive experience in certificate issuance, policy review, compliance, and documentation. I have a strong background in COI processing, endorsement management, and client service.
+      </p>
+      <p class="about-body">
+        I also enjoy creating efficient workflows, training materials, and tools that help teams perform better every day.
+      </p>
+    </div>
+    <div class="about-right">
+      <div class="about-feature">
+        <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div>
+          <h4>Compliance Focused</h4>
+          <p>Ensure accuracy and adherence to insurance guidelines and client requirements.</p>
+        </div>
+      </div>
+      <div class="about-feature">
+        <div class="feature-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+        <div>
+          <h4>Process Improvement</h4>
+          <p>Design and refine workflows that save time and reduce errors.</p>
+        </div>
+      </div>
+      <div class="about-feature">
+        <div class="feature-icon"><i class="fa-solid fa-people-group"></i></div>
+        <div>
+          <h4>Team Leadership</h4>
+          <p>Acting Team Lead experience with training, coaching, and quality assurance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="services">
-
-<div class="section-title">
-<p>WHAT I DO</p>
-<h2>Services</h2>
-</div>
-
-<div class="service-grid">
-<div class="service-card"><i class="fa-solid fa-file-shield"></i><p>COI Processing</p></div>
-<div class="service-card"><i class="fa-solid fa-file-pen"></i><p>Policy Servicing</p></div>
-<div class="service-card"><i class="fa-solid fa-pen-to-square"></i><p>Endorsements</p></div>
-<div class="service-card"><i class="fa-solid fa-magnifying-glass"></i><p>Policy Review</p></div>
-<div class="service-card"><i class="fa-solid fa-folder-open"></i><p>Documentation</p></div>
-<div class="service-card"><i class="fa-solid fa-headset"></i><p>Customer Support</p></div>
-</div>
-
+<!-- SERVICES / CORE EXPERTISE -->
+<section id="services" class="services-section">
+  <div class="section-header">
+    <p class="eyebrow">What I Do</p>
+    <h2>Core Expertise</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="svc-icon"><i class="fa-solid fa-file-certificate"></i></div>
+      <h4>Certificate Processing</h4>
+      <p>ACORD certificates, evidence of insurance, and endorsements.</p>
+    </div>
+    <div class="service-card">
+      <div class="svc-icon"><i class="fa-solid fa-shield-check"></i></div>
+      <h4>Compliance Review</h4>
+      <p>Review policies and documents to ensure compliance.</p>
+    </div>
+    <div class="service-card">
+      <div class="svc-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+      <h4>Workflow & Process Improvement</h4>
+      <p>Build and improve processes for efficiency and accuracy.</p>
+    </div>
+    <div class="service-card">
+      <div class="svc-icon"><i class="fa-solid fa-chart-bar"></i></div>
+      <h4>Documentation & Reporting</h4>
+      <p>Create SOPs, guides, trackers, and management reports.</p>
+    </div>
+    <div class="service-card">
+      <div class="svc-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+      <h4>Training & Support</h4>
+      <p>Develop training materials and support team development.</p>
+    </div>
+    <div class="service-card">
+      <div class="svc-icon"><i class="fa-solid fa-headset"></i></div>
+      <h4>Client & Carrier Support</h4>
+      <p>Coordinate with brokers, carriers, and internal stakeholders.</p>
+    </div>
+  </div>
 </section>
 
-<section id="skills">
-
-<div class="section-title">
-<p>WHAT I KNOW</p>
-<h2>Skills</h2>
-</div>
-
-<div class="skills-grid">
-<span>Commercial Insurance</span>
-<span>COI Processing</span>
-<span>Applied Epic</span>
-<span>CSR24</span>
-<span>Customer Support</span>
-<span>Documentation</span>
-<span>Microsoft Office</span>
-<span>Google Workspace</span>
-</div>
-
+<!-- SKILLS -->
+<section id="skills" class="skills-section">
+  <div class="section-header">
+    <p class="eyebrow">What I Know</p>
+    <h2>My Skills</h2>
+    <div class="section-divider"></div>
+    <p class="section-sub">Tools, systems, and strengths I use to deliver results.</p>
+  </div>
+  <div class="skills-columns">
+    <div class="skills-col">
+      <h4 class="skills-cat">Insurance Systems</h4>
+      <div class="skill-bar-item">
+        <span>Applied Epic</span>
+        <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <span>CSR24</span>
+        <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <span>Carrier Portals</span>
+        <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
+      </div>
+      <h4 class="skills-cat" style="margin-top:28px;">Microsoft Office</h4>
+      <div class="skill-bar-item">
+        <span>Excel</span>
+        <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <span>Outlook</span>
+        <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <span>Word</span>
+        <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+      </div>
+    </div>
+    <div class="skills-col">
+      <h4 class="skills-cat">Core Competencies</h4>
+      <div class="competency-list">
+        <span><i class="fa-solid fa-check"></i> Certificate Processing</span>
+        <span><i class="fa-solid fa-check"></i> Compliance Review</span>
+        <span><i class="fa-solid fa-check"></i> Policy Review</span>
+        <span><i class="fa-solid fa-check"></i> ACORD Certificates</span>
+        <span><i class="fa-solid fa-check"></i> Documentation</span>
+        <span><i class="fa-solid fa-check"></i> Process Improvement</span>
+        <span><i class="fa-solid fa-check"></i> Workflow Design</span>
+        <span><i class="fa-solid fa-check"></i> Team Leadership</span>
+        <span><i class="fa-solid fa-check"></i> Training & Coaching</span>
+        <span><i class="fa-solid fa-check"></i> Quality Assurance</span>
+        <span><i class="fa-solid fa-check"></i> Time Management</span>
+        <span><i class="fa-solid fa-check"></i> Communication</span>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="experience">
+<!-- EXPERIENCE -->
+<section id="experience" class="experience-section">
+  <div class="section-header">
+    <p class="eyebrow">Where I've Been</p>
+    <h2>My Experience</h2>
+    <div class="section-divider"></div>
+    <p class="section-sub">Professional experience and key achievements.</p>
+  </div>
 
-<div class="section-title">
-<p>WHERE I'VE BEEN</p>
-<h2>Experience</h2>
-</div>
+  <div class="exp-card">
+    <div class="exp-left">
+      <div class="exp-icon"><i class="fa-solid fa-building"></i></div>
+      <div class="exp-meta">
+        <h3>Insurance Processing Specialist</h3>
+        <p class="exp-company">SWAK BPO Corp.</p>
+        <p class="exp-date">March 2023 – Present</p>
+      </div>
+    </div>
+    <div class="exp-right">
+      <div class="exp-col">
+        <h5>Key Responsibilities</h5>
+        <ul>
+          <li>Process and review ACORD certificates and endorsements</li>
+          <li>Review policies for accuracy and compliance</li>
+          <li>Add Additional Insured, Loss Payee, and other endorsements</li>
+          <li>Verify coverage and policy details</li>
+          <li>Communicate with clients and underwriters</li>
+          <li>Manage documentation and email records</li>
+          <li>Create and update SOPs and workflow guides</li>
+          <li>Train and support new team members</li>
+        </ul>
+      </div>
+      <div class="exp-col">
+        <h5>Key Achievements</h5>
+        <ul class="achievements">
+          <li>Acting Team Lead — provided guidance and support to the team</li>
+          <li>Trained multiple new hires and created training materials</li>
+          <li>Developed SOPs and workflow improvements</li>
+          <li>Improved efficiency and accuracy in daily operations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-<div class="timeline">
-<div class="job">
-<h3>Insurance Processing Specialist</h3>
-<p class="job-meta">3+ years supporting U.S. insurance agencies</p>
-<ul>
-<li>COI processing</li>
-<li>Policy servicing</li>
-<li>Endorsements</li>
-<li>High accuracy & compliance</li>
-</ul>
-</div>
-</div>
-
+  <div class="exp-card secondary">
+    <div class="exp-left">
+      <div class="exp-icon"><i class="fa-solid fa-burger"></i></div>
+      <div class="exp-meta">
+        <h3>Service Crew</h3>
+        <p class="exp-company">Golden Arches Development Corporation (McDonald's)</p>
+        <p class="exp-date">2019 – 2023</p>
+      </div>
+    </div>
+    <div class="exp-right single">
+      <ul>
+        <li>Delivered excellent customer service in a fast-paced environment</li>
+        <li>Maintained accuracy in transaction processing</li>
+        <li>Demonstrated teamwork, time management, and multitasking skills</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
-<section id="portfolio">
-
-<div class="section-title">
-<p>SAMPLE WORK</p>
-<h2>Portfolio</h2>
-</div>
-
-<div class="portfolio-grid">
-<div class="project"><i class="fa-solid fa-file-shield"></i><p>COI Processing Sample</p></div>
-<div class="project"><i class="fa-solid fa-clipboard-check"></i><p>Policy Review Task</p></div>
-<div class="project"><i class="fa-solid fa-pen-to-square"></i><p>Endorsement Handling</p></div>
-<div class="project"><i class="fa-solid fa-folder-open"></i><p>Documentation Work</p></div>
-</div>
-
+<!-- PORTFOLIO -->
+<section id="portfolio" class="portfolio-section">
+  <div class="section-header">
+    <p class="eyebrow">Featured Projects</p>
+    <h2>Selected Work</h2>
+    <div class="section-divider"></div>
+    <p class="section-sub">A collection of projects and initiatives that improved processes, ensured compliance, and supported business goals.</p>
+  </div>
+  <div class="portfolio-grid">
+    <div class="port-card">
+      <div class="port-preview flow-diagram">
+        <i class="fa-solid fa-diagram-project"></i>
+      </div>
+      <div class="port-body">
+        <div class="port-tags"><span>Process Mapping</span><span>SOP Design</span><span>Documentation</span></div>
+        <h4>Certificate Issuance Workflow</h4>
+        <p>End-to-end workflow for certificate requests, reducing processing delays and improving accuracy.</p>
+      </div>
+    </div>
+    <div class="port-card">
+      <div class="port-preview dash-preview">
+        <i class="fa-solid fa-chart-line"></i>
+      </div>
+      <div class="port-body">
+        <div class="port-tags"><span>Excel</span><span>Reporting</span><span>Automation</span></div>
+        <h4>Renewal Tracking Dashboard</h4>
+        <p>Designed an Excel-based dashboard to monitor renewals and expirations, improving tracking and reducing missed renewals.</p>
+      </div>
+    </div>
+    <div class="port-card">
+      <div class="port-preview compliance-preview">
+        <i class="fa-solid fa-shield-halved"></i>
+      </div>
+      <div class="port-body">
+        <div class="port-tags"><span>Compliance</span><span>Checklist</span><span>QA</span></div>
+        <h4>Compliance Review Process</h4>
+        <p>Step-by-step compliance review process and checklist for certificate and endorsement verification.</p>
+      </div>
+    </div>
+    <div class="port-card">
+      <div class="port-preview sop-preview">
+        <i class="fa-solid fa-file-lines"></i>
+      </div>
+      <div class="port-body">
+        <div class="port-tags"><span>Documentation</span><span>SOP</span><span>Training</span></div>
+        <h4>Standard Operating Procedures</h4>
+        <p>SOPs and work instructions for daily operations, ensuring consistency and quality across the team.</p>
+      </div>
+    </div>
+    <div class="port-card">
+      <div class="port-preview training-preview">
+        <i class="fa-solid fa-chalkboard-user"></i>
+      </div>
+      <div class="port-body">
+        <div class="port-tags"><span>Training</span><span>Documentation</span><span>Leadership</span></div>
+        <h4>Training Guide for New Hires</h4>
+        <p>Comprehensive training manual and guides to help new team members ramp up faster and deliver quality results.</p>
+      </div>
+    </div>
+    <div class="port-card">
+      <div class="port-preview endorse-preview">
+        <i class="fa-solid fa-pen-to-square"></i>
+      </div>
+      <div class="port-body">
+        <div class="port-tags"><span>Endorsements</span><span>Policy</span><span>Review</span></div>
+        <h4>Endorsement Handling Guide</h4>
+        <p>Documented process for handling common endorsements, Additional Insureds, Loss Payees, and policy updates.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="contact">
-
-<div class="section-title centered">
-<p>GET IN TOUCH</p>
-<h2>Contact</h2>
-</div>
-
-<div class="contact-info">
-<p><i class="fa-solid fa-envelope"></i> <a href="mailto:adrianlesterp@gmail.com">adrianlesterp@gmail.com</a></p>
-<p><i class="fa-solid fa-phone"></i> <a href="tel:+639464093931">0946-409-3931</a></p>
-<p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/adrian-lester-palisoc-9b1584319" target="_blank" rel="noopener">linkedin.com/in/adrian-lester-palisoc-9b1584319</a></p>
-</div>
-
-<a href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
-
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <p class="contact-tag">Let's connect and create</p>
+      <h2>impact together.</h2>
+      <p class="contact-sub">Have a question or opportunity? I'd love to hear from you.</p>
+      <div class="contact-details">
+        <a href="mailto:adrianlesterp@gmail.com" class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-val">adrianlesterp@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/adrian-lester-palisoc-9b1584319" target="_blank" rel="noopener" class="contact-item">
+          <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+          <div>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-val">linkedin.com/in/adrian-lester-palisoc</span>
+          </div>
+        </a>
+        <a href="tel:+639464093931" class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <span class="contact-label">Mobile</span>
+            <span class="contact-val">0946-409-3931</span>
+          </div>
+        </a>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <span class="contact-label">Location</span>
+            <span class="contact-val">Philippines (Open to Remote)</span>
+          </div>
+        </div>
+      </div>
+      <a href="resume.pdf" target="_blank" class="btn-primary" style="margin-top:32px; display:inline-flex;">
+        <i class="fa-solid fa-download"></i> Download Resume
+      </a>
+    </div>
+    <div class="contact-right">
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" placeholder="Enter subject">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Type your message here..." rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary full-width">
+          Send Message <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
 </section>
 
 <footer>
-<p>&copy; <span id="year"></span> Adrian Palisoc. All rights reserved.</p>
+  <p>&copy; <span id="year"></span> Adrian Palisoc. All rights reserved.</p>
+  <a href="#home" class="back-top"><i class="fa-solid fa-arrow-up"></i></a>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
-
 </html>
